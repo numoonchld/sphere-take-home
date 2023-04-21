@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   min-height: 100vh;
+}
+
+.App > .sidebar {
+  background-color: blue;
+  color: white;
+
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 64px 0px;
+  gap: 32px;
+}
+
+.App > .sidebar > .nav-button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+}
+
+.App > .sidebar > hr {
+  width: 80%;
+}
+
+.App > .sidebar .nav-button {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: blue;
   color: white;
+  padding: 16px;
+  border-radius: 25px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.App > .sidebar .nav-button:hover {
+  border: 2px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App > .sidebar .nav-button.--active {
+  border: 1px solid white;
+}
+
+.App > .main-area {
+  padding-right: 64px;
+  padding-left: 16px;
+}
+
+.App .user-login-area {
+  height: 64px;
+  width: 100%;
+  padding-top: 32px;
+
+  display: flex;
+  flex-direction: row-reverse;
 }
