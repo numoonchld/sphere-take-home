@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FC } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import AvailablePreSales from "./components/AvailablePreSales";
 import { Route, Routes } from "react-router-dom";
 import PreSaleCreator from "./components/PreSaleCreator";
+
+declare const window: any;
 
 const App: FC = () => {
   return (
