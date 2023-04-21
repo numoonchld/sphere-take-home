@@ -175,3 +175,20 @@
   flex-direction: row;
   gap: 16px;
 }
+
+.App .pre-sale-creator article {
+  height: 300px;
+  border: 1px blue solid;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.App .pre-sale-creator article img {
+  object-fit: cover;
+  /* width: 200px; */
+  height: 80%;
+  border-radius: 15px;
+  padding: 24px;
+}
