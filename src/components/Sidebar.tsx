@@ -32,6 +32,15 @@ const Sidebar: FC = () => {
           </Link>
         </div>
         <hr />
+
+        <div className="sidebar-detail-group">
+          <h4>Discord #1000</h4>
+          <p>arnold@example.com</p>
+          <div className="sidebar-socials">
+            <i className="fa-brands fa-twitter fa-2x"></i>
+            <i className="fa-brands fa-discord fa-2x"></i>
+          </div>
+        </div>
       </section>
     </>
   );
