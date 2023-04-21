@@ -63,6 +63,17 @@
   flex-direction: row-reverse;
 }
 
+.App .user-login-area button {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: blue;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  height: 24px;
+}
+
 .App .sidebar .sidebar-detail-group {
   /* padding-left: 16px; */
   display: flex;
